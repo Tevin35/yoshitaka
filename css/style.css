@@ -66,6 +66,13 @@ header h1{
 .gallery, .collaborations, .store{
     display:flex;
 }
+.gallery, .store, .collaborations{
+    height: 100vh;
+}
 .ifrit{
     padding: 0 5vw;
+}
+.store div, .collaborations div{
+    width: 40%;
+    margin: auto;
 }
