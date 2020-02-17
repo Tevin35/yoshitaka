@@ -8,7 +8,7 @@ h2{
 h3{
     font-size: 1.7em;
 }
-p{
+p, label{
     font-size: 1.3em;
 }
 header{
@@ -38,7 +38,7 @@ header a:hover, header a:focus{
         margin-left: 20vw;
     }
 }
-.gallery img, .collaborations img, .store img{
+.gallery img, .collaborations img, .store img, .contact img{
     max-width: 400px;
     max-height: 500px;
 }
@@ -66,8 +66,11 @@ header h1{
 .gallery, .collaborations, .store{
     display:flex;
 }
-.gallery, .store, .collaborations{
+.gallery, .store, .collaborations, .contact{
     height: 100vh;
+}
+.gallery{
+    align-items: center;
 }
 .ifrit{
     padding: 0 5vw;
@@ -75,4 +78,23 @@ header h1{
 .store div, .collaborations div{
     width: 40%;
     margin: auto;
+}
+.contact{
+    text-align: center;
+    padding-top: 2vh;
+}
+.contact img{
+    margin: auto;
+}
+input {
+    width: 100%;
+    padding: 1vw 2vw;
+    margin: 1vw 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px black solid;
+}
+input[type=submit]{
+    background-color: #222;
+    color: white;
 }
